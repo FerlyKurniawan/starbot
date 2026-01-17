@@ -9,12 +9,13 @@ from dotenv import load_dotenv
 
 def get_blacklist():
     try:
-        aa = "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL25heWExNTAzL3dhcm5pbmcvbWFpbi9ibGdjYXN0Lmpzb24="
+        aa = "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Zlcmx5S3Vybmlhd2FuL3dhcm5pbmdzL21haW4vYmxnY2FzdC5qc29u"
         bb = b64decode(aa).decode("utf-8")
         res = requests.get(bb)
         if res.status_code == 200:
             return json.loads(res.text)
     except Exception as e:
+        return f"An error occurred: {str(e)}"
         sys.exit(1)
 
 
@@ -32,9 +33,9 @@ costum_font = "€¥£¢𝑎𝑏𝑐𝑑𝑒𝑓𝑔𝒉𝑖𝑗𝑘𝑙𝑚𝑛
 IS_JASA_PRIVATE = os.environ.get("IS_JASA_PRIVATE", False)
 IS_CURI_DATA = os.environ.get("IS_CURI_DATA", True)
 WAJIB_JOIN = ["cacicukisupport","MutualanLaskar","PILOPPYCASTORE"]
-USENAME_OWNER = os.environ.get("USENAME_OWNER", "@cacicuki")
+USENAME_OWNER = os.environ.get("USENAME_OWNER", "@StarBotDevs")
 API_ID = int(os.environ.get("API_ID", 25380372))
-MAX_BOT = int(os.environ.get("MAX_BOT", 500))
+MAX_BOT = int(os.environ.get("MAX_BOT", 1000))
 
 API_HASH = os.environ.get("API_HASH", "041010a32cb5c1af8a1deb09d827f76b")
 
