@@ -93,11 +93,11 @@ SPOTIFY_CLIENT_SECRET = os.environ.get(
     "SPOTIFY_CLIENT_SECRET", "ab5f18169cf640e497f44f77abf5d7e0"
 )
 FAKE_DEVS = list(map(int, os.environ.get("FAKE_DEVS", "6619004679").split()))
-SAWERIA_EMAIL = os.environ.get("SAWERIA_EMAIL", "anandamahar084@gmail.com")
+SAWERIA_EMAIL = os.environ.get("SAWERIA_EMAIL", "ferlyk19@gmail.com")
 SAWERIA_USERID = os.environ.get(
-    "SAWERIA_USERID", "50e13c97-a606-4d31-878d-2fc38b41c6a5"
+    "SAWERIA_USERID", "c3b71c7b-3039-48c8-8b0a-81d711dffcae"
 )
-SAWERIA_USERNAME = os.environ.get("SAWERIA_USERNAME", "kenapanan")
+SAWERIA_USERNAME = os.environ.get("SAWERIA_USERNAME", "ferlyk19")
 API_KEY = [
     "4dd6efe4b3msh7af04b95cfc378ep10a5e4jsnfa10ed324a43",
     "24d6a3913bmsh3561d6af783658fp1a8240jsneef57a49ff14",
